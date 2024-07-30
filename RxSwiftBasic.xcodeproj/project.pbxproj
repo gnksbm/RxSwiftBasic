@@ -16,6 +16,11 @@
 		BEC716B12C58759A009535BD /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = BEC716B02C58759A009535BD /* RxSwift */; };
 		BEC716B72C587B08009535BD /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = BEC716B62C587B08009535BD /* SnapKit */; };
 		BEC716C22C58D90A009535BD /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = BEC716C12C58D90A009535BD /* .gitignore */; };
+		BEC716C72C58D999009535BD /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC716C62C58D999009535BD /* UIViewController+.swift */; };
+		BEC716C92C58D9D6009535BD /* RxCocoa+.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC716C82C58D9D6009535BD /* RxCocoa+.swift */; };
+		BEC716CB2C58D9F5009535BD /* RxSwift+.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC716CA2C58D9F5009535BD /* RxSwift+.swift */; };
+		BEC716CD2C58DA12009535BD /* Snapkit+.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC716CC2C58DA12009535BD /* Snapkit+.swift */; };
+		BEC716D02C58DABE009535BD /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC716CF2C58DABE009535BD /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +32,11 @@
 		BEC716A52C587575009535BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BEC716A72C587575009535BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BEC716C12C58D90A009535BD /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		BEC716C62C58D999009535BD /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
+		BEC716C82C58D9D6009535BD /* RxCocoa+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RxCocoa+.swift"; sourceTree = "<group>"; };
+		BEC716CA2C58D9F5009535BD /* RxSwift+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RxSwift+.swift"; sourceTree = "<group>"; };
+		BEC716CC2C58DA12009535BD /* Snapkit+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Snapkit+.swift"; sourceTree = "<group>"; };
+		BEC716CF2C58DABE009535BD /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,8 +74,6 @@
 			isa = PBXGroup;
 			children = (
 				BEC716C02C58D8A7009535BD /* Sources */,
-				BEC716BE2C58D87B009535BD /* App */,
-				BEC7169D2C587573009535BD /* ViewController.swift */,
 				BEC716BF2C58D89F009535BD /* Resources */,
 			);
 			path = RxSwiftBasic;
@@ -93,8 +101,47 @@
 		BEC716C02C58D8A7009535BD /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				BEC716BE2C58D87B009535BD /* App */,
+				BEC716C42C58D976009535BD /* Foundation */,
+				BEC716C32C58D96F009535BD /* Presentation */,
 			);
 			path = Sources;
+			sourceTree = "<group>";
+		};
+		BEC716C32C58D96F009535BD /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				BEC7169D2C587573009535BD /* ViewController.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		BEC716C42C58D976009535BD /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				BEC716CE2C58DA8D009535BD /* Architecture */,
+				BEC716C52C58D97D009535BD /* Extension */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		BEC716C52C58D97D009535BD /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				BEC716CA2C58D9F5009535BD /* RxSwift+.swift */,
+				BEC716C82C58D9D6009535BD /* RxCocoa+.swift */,
+				BEC716CC2C58DA12009535BD /* Snapkit+.swift */,
+				BEC716C62C58D999009535BD /* UIViewController+.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		BEC716CE2C58DA8D009535BD /* Architecture */ = {
+			isa = PBXGroup;
+			children = (
+				BEC716CF2C58DABE009535BD /* ViewModel.swift */,
+			);
+			path = Architecture;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,7 +225,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				BEC7169E2C587573009535BD /* ViewController.swift in Sources */,
+				BEC716CB2C58D9F5009535BD /* RxSwift+.swift in Sources */,
+				BEC716CD2C58DA12009535BD /* Snapkit+.swift in Sources */,
+				BEC716C92C58D9D6009535BD /* RxCocoa+.swift in Sources */,
 				BEC7169A2C587573009535BD /* AppDelegate.swift in Sources */,
+				BEC716C72C58D999009535BD /* UIViewController+.swift in Sources */,
+				BEC716D02C58DABE009535BD /* ViewModel.swift in Sources */,
 				BEC7169C2C587573009535BD /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
