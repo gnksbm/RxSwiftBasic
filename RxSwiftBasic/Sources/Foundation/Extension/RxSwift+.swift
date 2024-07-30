@@ -13,3 +13,9 @@ enum DisposableBuilder {
         components
     }
 }
+
+extension DisposeBag {
+    func store(@DisposableBuilder _ disposables: () -> [Disposable]) {
+        disposables().forEach { $0.disposed(by: self) }
+    }
+}

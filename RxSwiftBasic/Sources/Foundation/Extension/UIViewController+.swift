@@ -15,4 +15,15 @@ extension UIViewController {
     var safeArea: UILayoutGuide {
         view.safeAreaLayoutGuide
     }
+    
+    func showAlert(title: String, message: String) {
+        let alertController = UIAlertController(
+            title: title,
+            message: message,
+            preferredStyle: .alert
+        )
+        let okAction = UIAlertAction(title: "확인", style: .default)
+        alertController.addAction(okAction)
+        present(alertController, animated: true)
+    }
 }

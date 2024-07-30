@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		BEC7169A2C587573009535BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC716992C587573009535BD /* AppDelegate.swift */; };
 		BEC7169C2C587573009535BD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC7169B2C587573009535BD /* SceneDelegate.swift */; };
-		BEC7169E2C587573009535BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC7169D2C587573009535BD /* ViewController.swift */; };
+		BEC7169E2C587573009535BD /* SimpleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC7169D2C587573009535BD /* SimpleTableViewController.swift */; };
 		BEC716A32C587575009535BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEC716A22C587575009535BD /* Assets.xcassets */; };
 		BEC716A62C587575009535BD /* Base in Resources */ = {isa = PBXBuildFile; fileRef = BEC716A52C587575009535BD /* Base */; };
 		BEC716AF2C58759A009535BD /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = BEC716AE2C58759A009535BD /* RxCocoa */; };
@@ -21,13 +21,14 @@
 		BEC716CB2C58D9F5009535BD /* RxSwift+.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC716CA2C58D9F5009535BD /* RxSwift+.swift */; };
 		BEC716CD2C58DA12009535BD /* Snapkit+.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC716CC2C58DA12009535BD /* Snapkit+.swift */; };
 		BEC716D02C58DABE009535BD /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC716CF2C58DABE009535BD /* ViewModel.swift */; };
+		BEC716D52C58DFE7009535BD /* SimpleTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC716D42C58DFE7009535BD /* SimpleTableViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BEC716962C587573009535BD /* RxSwiftBasic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSwiftBasic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEC716992C587573009535BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BEC7169B2C587573009535BD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BEC7169D2C587573009535BD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BEC7169D2C587573009535BD /* SimpleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTableViewController.swift; sourceTree = "<group>"; };
 		BEC716A22C587575009535BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BEC716A52C587575009535BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BEC716A72C587575009535BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -37,6 +38,7 @@
 		BEC716CA2C58D9F5009535BD /* RxSwift+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RxSwift+.swift"; sourceTree = "<group>"; };
 		BEC716CC2C58DA12009535BD /* Snapkit+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Snapkit+.swift"; sourceTree = "<group>"; };
 		BEC716CF2C58DABE009535BD /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		BEC716D42C58DFE7009535BD /* SimpleTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTableViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,7 +113,7 @@
 		BEC716C32C58D96F009535BD /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				BEC7169D2C587573009535BD /* ViewController.swift */,
+				BEC716D32C58DFE1009535BD /* SimpleTable */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -142,6 +144,15 @@
 				BEC716CF2C58DABE009535BD /* ViewModel.swift */,
 			);
 			path = Architecture;
+			sourceTree = "<group>";
+		};
+		BEC716D32C58DFE1009535BD /* SimpleTable */ = {
+			isa = PBXGroup;
+			children = (
+				BEC7169D2C587573009535BD /* SimpleTableViewController.swift */,
+				BEC716D42C58DFE7009535BD /* SimpleTableViewModel.swift */,
+			);
+			path = SimpleTable;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,7 +235,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BEC7169E2C587573009535BD /* ViewController.swift in Sources */,
+				BEC7169E2C587573009535BD /* SimpleTableViewController.swift in Sources */,
 				BEC716CB2C58D9F5009535BD /* RxSwift+.swift in Sources */,
 				BEC716CD2C58DA12009535BD /* Snapkit+.swift in Sources */,
 				BEC716C92C58D9D6009535BD /* RxCocoa+.swift in Sources */,
@@ -232,6 +243,7 @@
 				BEC716C72C58D999009535BD /* UIViewController+.swift in Sources */,
 				BEC716D02C58DABE009535BD /* ViewModel.swift in Sources */,
 				BEC7169C2C587573009535BD /* SceneDelegate.swift in Sources */,
+				BEC716D52C58DFE7009535BD /* SimpleTableViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
